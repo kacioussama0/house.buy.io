@@ -1,0 +1,120 @@
+* {
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #191919;
+}
+
+div.parent {
+    
+    height: 600px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.parent div {
+    background-color: #fff;
+    width: 450px;
+    height: 570px;
+    /* box-shadow: 0 0 5px 0px #eee; */
+    position: relative;
+    margin-left: 15px;
+    border-radius: 15px;
+}
+div.parent div img {
+    width: 450px;
+    height: 250px;
+    border-radius: 15px 15px 0  0 ;
+    transition: .6s;
+}
+img:hover {
+  
+  
+}
+
+div.parent div.house-one::before {
+    content: "Featured";
+    width: 100px;
+    height: 35px;
+    background-color: #EA733E;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: -18px;
+}
+div.parent div.house-one::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    border: 17.5px solid #EA733E;
+    border-color:transparent transparent transparent #EA733E;
+    top: -18px;
+    left: 100px;
+}
+h3, p {
+    margin: 15px;
+    text-align: center;
+}
+p {
+    color: #ACACAC;
+    line-height: 1.5;
+    text-align: center;
+}
+span {
+    display: inline-block;
+    margin: 0 15px;
+}
+span i {
+    font-size: 25px;
+    color: #C9C5BA;
+    margin: 0 5px;
+}
+h4 {
+    margin: 5px;
+}
+b {
+    color : #000;
+    margin: -5px 15px;
+    font-size: 16px;
+}
+.sale {
+    margin: 0 15px;
+}
+
+h5 {
+    margin: 0 15px;
+    color: #60C3CA;
+    font-size: 25px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+#heart {
+    color: black;
+    margin: 0 15px;
+   
+    cursor: pointer;
+    transition: 1 linear;
+    position: relative;    
+    animation-timing-function: linear ;
+    float: right;
+}
+
+@keyframes red {
+    from {
+        font-size: 16px;
+    }
+    to {
+        font-size: 38px;
+    }
+}
